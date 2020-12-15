@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<title>PA1</title>
+	<style type="text/css">
+		body {
+			background-color: aliceblue;
+		}
+
+		#canvas {
+			position: fixed;
+			margin-top: 50px;
+		}
+
+		.mv-1 {
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+		}
+
+		.mv-2 {
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+		}
+	</style>
+</head>
+<body>
+	<div align="center">
+		<div class="mv-1">
+			<button class="click" onclick="cubeReset();">Reset</button>
+		</div>
+		<div class="mv-1">
+			(φ, rotation on y axis) : <input id="phi" type="number" value="0.0" />
+			(θ, rotation on x axis) : <input id="theta" type="number" value="0.0" />
+			<button class="click" onclick="cubeRotate();">Rotate</button>
+		</div>
+		<div class="mv-1">
+			(Degree per second) : <input id="rotation-speed" value="30.0" type="number" />
+			<button class="click" onclick="cubeAnimateRotateX();">Animate rotate X axis</button>
+			<button class="click" onclick="cubeAnimateRotateY();">Animate rotate Y axis</button>
+			<button class="click" onclick="cubeAnimateRotateZ();">Animate rotate Z axis</button>
+			<button class="click" onclick="cubeStop();">Stop</button>
+		</div>
+	</div>
+	<canvas id="canvas" width="400" height="400" style="background-color: pink"></canvas>
+	<script type="text/javascript" src="script.js">	</script>
+</body>
+</html>
